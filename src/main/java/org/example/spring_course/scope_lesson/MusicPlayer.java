@@ -1,22 +1,12 @@
 package org.example.spring_course.scope_lesson;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class MusicPlayer {
-    private List<Music> musicList = new ArrayList<>();
+    private Music music;
     private String name;
 
     //IoC
-    public MusicPlayer(List<Music> musicList) {
-        this.musicList.addAll(musicList);
-    }
-
-    public MusicPlayer() {
-    }
-
-    public void setMusic(List<Music> musicList) {
-        this.musicList.addAll(musicList);
+    public MusicPlayer(Music music) {
+        this.music = music;
     }
 
     public void setName(String name) {
@@ -28,6 +18,6 @@ public class MusicPlayer {
     }
 
     public void playMusic() {
-        this.musicList.forEach(music -> System.out.println(music.getSong()));
+        System.out.println(music.getSong());
     }
 }
