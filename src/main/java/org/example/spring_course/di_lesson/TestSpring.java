@@ -1,4 +1,4 @@
-package org.example.spring_course;
+package org.example.spring_course.di_lesson;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
