@@ -1,4 +1,4 @@
-package org.example.spring_course.di_lesson;
+package org.example.spring_course.scope_lesson;
 
 import java.util.ArrayList;
 import java.util.List;
